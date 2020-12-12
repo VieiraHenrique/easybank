@@ -22,6 +22,12 @@
 			background: url(https://vieirahenrique.github.io/easybank/images/icon-hamburger.svg)
 				no-repeat center;
 			cursor: pointer;
+
+			@media screen and (min-width: 768px) {
+				background: none;
+				height: fit-content;
+				width: fit-content;
+			}
 		}
 	}
 }
