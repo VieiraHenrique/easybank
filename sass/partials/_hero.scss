@@ -11,13 +11,9 @@
 			url(https://vieirahenrique.github.io/easybank/images/bg-intro-mobile.svg)
 				center;
 		background-size: 345px, cover;
-
-		@media screen and (min-width: 768px) {
-			background: none;
-		}
 	}
 
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 1025px) {
 		padding-bottom: 0;
 
 		&__content {
@@ -27,7 +23,7 @@
 			align-items: center;
 			overflow-x: hidden;
 
-			@media screen and (min-width: 768px) {
+			@media screen and (min-width: 1025px) {
 				background: url(https://vieirahenrique.github.io/easybank/images/bg-intro-desktop.svg)
 					right -400px top -350px no-repeat;
 
@@ -37,8 +33,22 @@
 		}
 
 		&__img {
+			position: absolute;
+			z-index: 0;
 			order: 1;
-			min-height: inherit;
+			min-height: 80rem;
+			width: 80rem;
+			top: 0rem;
+			right: -18rem;
+
+			background: url(https://vieirahenrique.github.io/easybank/images/image-mockups.png)
+				center bottom no-repeat;
+			background-size: 95%;
+
+			@media screen and (min-width: 1441px) {
+				right: 3rem;
+				background-size: 95%;
+			}
 		}
 
 		&__description {
