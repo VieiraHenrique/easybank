@@ -1,0 +1,25 @@
+.header {
+	.wrapper {
+		height: 6.4rem;
+		padding: 0 2rem;
+
+		@media screen and (min-width: 768px) {
+			padding: 0;
+		}
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		img {
+			width: 140px;
+			cursor: pointer;
+		}
+
+		.menu {
+			width: 4rem;
+			height: 4rem;
+			background: url(/images/icon-hamburger.svg) no-repeat
+				center;
+			cursor: pointer;
+		}
+	}
+}

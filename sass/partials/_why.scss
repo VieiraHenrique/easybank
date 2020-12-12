@@ -1,0 +1,31 @@
+.why {
+	background: $light-grayish-blue;
+	text-align: center;
+	padding: 11rem 0;
+
+	&__grid {
+		margin-top: 6rem;
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 4rem;
+
+		img {
+			width: 7.5rem;
+		}
+
+		h3 {
+			color: $dark-blue;
+			margin: 3rem 0;
+		}
+		@media screen and (min-width: 768px) {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		text-align: left;
+		&__description {
+			max-width: 61rem;
+		}
+	}
+}

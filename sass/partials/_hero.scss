@@ -1,0 +1,57 @@
+.hero {
+	text-align: center;
+	padding-bottom: 9rem;
+
+	&__img {
+		height: 30rem;
+		margin: 0 -2.4rem;
+		background: url(/images/image-mockups.png) center bottom
+				no-repeat,
+			url(/images/bg-intro-mobile.svg) center;
+		background-size: 345px, cover;
+
+		@media screen and (min-width: 768px) {
+			background: none;
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		padding-bottom: 0;
+
+		&__content {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			min-height: 66rem;
+			align-items: center;
+
+			@media screen and (min-width: 768px) {
+				background: url(/images/image-mockups.png) right
+						100px top -110px no-repeat,
+					url(/images/bg-intro-desktop.svg) right -400px
+						top -350px no-repeat;
+
+				margin-right: -450px;
+				background-size: 75rem, cover;
+			}
+		}
+
+		&__img {
+			order: 1;
+			min-height: inherit;
+		}
+
+		&__description {
+			text-align: left;
+			max-width: 435px;
+
+			.title {
+				max-width: 395px;
+				font-size: 5.2rem;
+			}
+
+			.copy {
+				font-size: 1.7rem;
+			}
+		}
+	}
+}

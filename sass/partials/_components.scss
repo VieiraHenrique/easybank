@@ -1,0 +1,30 @@
+.btn {
+	display: inline-block;
+	padding: 1.5rem 4rem;
+	border-radius: 10rem;
+	color: $white;
+	background: linear-gradient(to right, $lime-green, $bright-cyan);
+}
+
+.wrapper {
+	padding: 0 2.4rem;
+	max-width: 1115px;
+	margin: 0 auto;
+}
+
+.title {
+	color: $dark-blue;
+	font-size: 4rem;
+	font-weight: 400;
+	margin: 2rem 0 2rem;
+}
+
+.copy {
+	margin-bottom: 2rem;
+	font-size: 1.45rem;
+	color: $grayish-blue;
+
+	@media screen and (min-width: 768px) {
+		font-size: 1.6rem;
+	}
+}

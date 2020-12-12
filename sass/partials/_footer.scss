@@ -1,0 +1,77 @@
+.footer {
+	padding-top: 4rem;
+	background: $dark-blue;
+
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@media screen and (min-width: 768px) {
+			flex-direction: row;
+			justify-content: space-between;
+
+			.footer__menu {
+				display: flex;
+				gap: 10rem;
+				text-align: left;
+
+				li {
+					text-align: left;
+					color: $grayish-blue;
+				}
+			}
+		}
+	}
+
+	.logo {
+		width: 14rem;
+	}
+
+	&__left {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__icons {
+		padding-top: 3rem;
+		padding-bottom: 4rem;
+		display: flex;
+		gap: 1.5rem;
+
+		img {
+			width: 2.5rem;
+		}
+	}
+
+	&__menu {
+		padding-bottom: 4rem;
+		ul {
+			display: flex;
+			flex-direction: column;
+			gap: 2rem;
+			color: $light-gray;
+			text-align: center;
+			font-size: 1.6rem;
+		}
+
+		&--left {
+			margin-bottom: 2rem;
+		}
+	}
+
+	&__cta {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.btn {
+		margin-bottom: 3rem;
+	}
+	span {
+		color: $grayish-blue;
+		font-size: 1.4rem;
+		padding-bottom: 3rem;
+	}
+}

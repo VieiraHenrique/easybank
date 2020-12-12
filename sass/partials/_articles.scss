@@ -1,0 +1,84 @@
+.articles {
+	padding-top: 10rem;
+	padding-bottom: 9rem;
+	text-align: center;
+	background: $light-gray;
+
+	@media screen and (min-width: 768px) {
+		padding-top: 10rem;
+		padding-bottom: 8rem;
+	}
+
+	.title {
+		margin-bottom: 4rem;
+		@media screen and (min-width: 768px) {
+			text-align: left;
+		}
+	}
+
+	&__grid {
+		display: grid;
+		gap: 2.5rem;
+		grid-template-columns: 1fr;
+
+		@media screen and (min-width: 768px) {
+			grid-template-columns: repeat(4, 1fr);
+			gap: 3rem;
+		}
+
+		&--item {
+			background: $white;
+			border-radius: 1rem;
+
+			.img {
+				border-top-left-radius: 1rem;
+				border-top-right-radius: 1rem;
+				height: 20rem;
+				background-size: cover;
+			}
+
+			&-text {
+				padding: 3rem;
+				text-align: left;
+
+				span {
+					color: $grayish-blue;
+					font-size: 1.2rem;
+				}
+
+				h3 {
+					margin: 2rem 0 1rem;
+					font-weight: 300;
+				}
+
+				@media screen and (min-width: 768px) {
+					padding: 3rem 2.5rem 1rem;
+					h3 {
+						margin: 1.5rem 0;
+						font-size: 1.8rem;
+					}
+
+					p {
+						font-size: 1.4rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+.currency {
+	background: url(/images/image-currency.jpg);
+}
+
+.restaurant {
+	background: url(/images/image-restaurant.jpg);
+}
+
+.plane {
+	background: url(/images/image-plane.jpg);
+}
+
+.confetti {
+	background: url(/images/image-confetti.jpg);
+}
