@@ -46,3 +46,17 @@ img {
 	margin: 0 auto;
 	padding: 0 2rem;
 }
+
+#overlay {
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: rgba($color: hsl(233, 26%, 24%), $alpha: 0.5);
+}
+
+.overlay-hidden {
+	display: none;
+}
