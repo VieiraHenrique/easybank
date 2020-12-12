@@ -1,13 +1,15 @@
 .hero {
 	text-align: center;
 	padding-bottom: 9rem;
+	position: relative;
 
 	&__img {
 		height: 30rem;
 		margin: 0 -2.4rem;
-		background: url(images/image-mockups.png) center bottom
-				no-repeat,
-			url(images/bg-intro-mobile.svg) center;
+		background: url(https://vieirahenrique.github.io/easybank/images/image-mockups.png)
+				center bottom no-repeat,
+			url(https://vieirahenrique.github.io/easybank/images/bg-intro-mobile.svg)
+				center;
 		background-size: 345px, cover;
 
 		@media screen and (min-width: 768px) {
@@ -26,13 +28,11 @@
 			overflow-x: hidden;
 
 			@media screen and (min-width: 768px) {
-				background: url(images/image-mockups.png) right
-						100px top -110px no-repeat,
-					url(images/bg-intro-desktop.svg) right -400px
-						top -350px no-repeat;
+				background: url(https://vieirahenrique.github.io/easybank/images/bg-intro-desktop.svg)
+					right -400px top -350px no-repeat;
 
 				margin-right: -420px;
-				background-size: 75rem, cover;
+				background-size: cover;
 			}
 		}
 
