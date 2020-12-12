@@ -5,9 +5,9 @@
 	&__img {
 		height: 30rem;
 		margin: 0 -2.4rem;
-		background: url(/images/image-mockups.png) center bottom
+		background: url(images/image-mockups.png) center bottom
 				no-repeat,
-			url(/images/bg-intro-mobile.svg) center;
+			url(images/bg-intro-mobile.svg) center;
 		background-size: 345px, cover;
 
 		@media screen and (min-width: 768px) {
@@ -23,14 +23,15 @@
 			grid-template-columns: 1fr 1fr;
 			min-height: 66rem;
 			align-items: center;
+			overflow-x: hidden;
 
 			@media screen and (min-width: 768px) {
-				background: url(/images/image-mockups.png) right
+				background: url(images/image-mockups.png) right
 						100px top -110px no-repeat,
-					url(/images/bg-intro-desktop.svg) right -400px
+					url(images/bg-intro-desktop.svg) right -400px
 						top -350px no-repeat;
 
-				margin-right: -450px;
+				margin-right: -420px;
 				background-size: 75rem, cover;
 			}
 		}
