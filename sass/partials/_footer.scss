@@ -54,6 +54,14 @@
 			color: $light-gray;
 			text-align: center;
 			font-size: 1.6rem;
+
+			a {
+				color: $grayish-blue;
+
+				&:hover {
+					color: $white;
+				}
+			}
 		}
 
 		&--left {
